@@ -33,3 +33,6 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py311_23.5.2-0-L
 ## Conda path
 ENV PATH /home/user/conda/bin:$PATH
 RUN conda init zsh
+
+# Start a zsh shell when the container is run
+CMD ["/bin/zsh"]
